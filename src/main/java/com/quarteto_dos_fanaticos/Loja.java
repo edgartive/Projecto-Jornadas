@@ -96,6 +96,7 @@ class Loja {
 
     //adicionar um produto e registrar a venda
     void adicionarAoCarrinho() {
+    try{
         Scanner scanner = new Scanner(System.in);
         exibirProdutos(); 
         
@@ -126,10 +127,14 @@ class Loja {
         valorTotalEstoque += produtoSelecionado.preco * quantidade;
         
         System.out.printf("Produto %s (Mt %.2f) adicionado ao carrinho. Total: Mt %.2f\n", produtoSelecionado.nome, produtoSelecionado.preco, valorVenda);
+        }catch(Exception e){
+        	throw new RuntimeException("Algum erro papa" + e.getMessage());
+        }
     }
 
     // Método para devolver um produto ao estoque
     void devolverProduto() {
+    try{
         Scanner scanner = new Scanner(System.in);
         exibirProdutos(); // Exibe os produtos disponíveis
         
@@ -160,6 +165,9 @@ class Loja {
         valorTotalEstoque -= produtoSelecionado.preco * quantidade;
         
         System.out.printf("Produto %s (Mt %.2f) devolvido. Total a ser descontado: Mt %.2f\n", produtoSelecionado.nome, produtoSelecionado.preco, valorDevolucao);
+        }catch(Exception e){
+        	System.out.println("Something ocurred bad" + e.getMessage());
+        }
     }
 
     //encontrar produto pelo nome
@@ -181,6 +189,7 @@ class Loja {
 
     //exibir o menu e lidar com as escolhas do usuário
     public static void menu(Loja loja) {
+    try{
         Scanner scanner = new Scanner(System.in);
         int opcao;
 
@@ -254,6 +263,9 @@ class Loja {
                     break;
             }
         } while (opcao != 6); 
+        }catch(Exception e){
+        	System.out.println("Sinceramente voce eh louco " + e.getMessage());
+        }
     }
     
     // Método principal para executar o programa
