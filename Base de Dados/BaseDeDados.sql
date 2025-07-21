@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 8.0.41, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.42, for Linux (x86_64)
 --
 -- Host: localhost    Database: Gerir_Loja
 -- ------------------------------------------------------
--- Server version	8.0.41
+-- Server version	8.0.42-0ubuntu0.22.04.2
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -16,13 +16,13 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `podutos`
+-- Table structure for table `produtos`
 --
 
-DROP TABLE IF EXISTS `podutos`;
+DROP TABLE IF EXISTS `produtos`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `podutos` (
+CREATE TABLE `produtos` (
   `idProduto` varchar(12) NOT NULL,
   `nomeProduto` varchar(50) DEFAULT NULL,
   `dataValidade` date DEFAULT NULL,
@@ -31,12 +31,12 @@ CREATE TABLE `podutos` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `podutos`
+-- Dumping data for table `produtos`
 --
 
-LOCK TABLES `podutos` WRITE;
-/*!40000 ALTER TABLE `podutos` DISABLE KEYS */;
-/*!40000 ALTER TABLE `podutos` ENABLE KEYS */;
+LOCK TABLES `produtos` WRITE;
+/*!40000 ALTER TABLE `produtos` DISABLE KEYS */;
+/*!40000 ALTER TABLE `produtos` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -48,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-07-21 21:09:36
+-- Dump completed on 2025-07-21 23:13:24
