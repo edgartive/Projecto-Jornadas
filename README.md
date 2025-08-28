@@ -27,3 +27,5 @@ COMO DEVE FUNCIONAR +/-
 	- Usuário pode fazer upload ou download, respeitando as permissões Samba, like se for docente pode fazer upload.
 	
 													Niggas sugestoes, o projecto eh nosso!! Let's get start!
+
+													@Alexandre estou a pedir fazer seu primeiro push para esse repositorio por favor!! Quem for a ver essa mensagem eh sinal de que estah on no github e que estah interessado em dominar git, entao manda uma esteganografia no meu whatsapp privado please!!
